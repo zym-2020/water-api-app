@@ -4,4 +4,9 @@ module.exports = defineConfig({
   devServer: {
     port: 8080,
   },
+  pluginOptions: {
+    electronBuilder: {
+      preload: "src/preload.js",
+    },
+  },
 });
